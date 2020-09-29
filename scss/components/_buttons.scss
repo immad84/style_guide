@@ -1,0 +1,51 @@
+
+
+.btn {
+  margin-top: 15px;
+  width: 100%;
+  color: $white;
+  border: none;
+  padding: 10px 0;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+  .default {
+    background-color: $malibu;
+    @extend %transit;
+    &:hover {
+      background-color: $color-bg-button;
+    }
+  }
+  
+  .error {
+    background-color: $sunglo ;
+    @extend %transit;
+    &:hover {
+      background-color: $color-bg-button;
+    }
+  }
+  
+  .info {
+    background-color: $purple-mountain-majesty;
+    @extend %transit;
+    &:hover {
+      background-color: $color-bg-button;
+    }
+  }
+  
+  .success {
+    background-color: $emerald;
+    @extend %transit;
+    &:hover {
+      background-color: $color-bg-button;
+    }
+  }
+  
+  .warning {
+    background-color: $coral;
+    @extend %transit;
+    &:hover {
+      background-color: $color-bg-button;
+    }
+  }
