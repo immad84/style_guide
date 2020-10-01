@@ -334,38 +334,25 @@ a {
   border-left: 8px solid #58E1C1;
   border-radius: 5px; }
 
-.btn {
-  margin-top: 15px;
-  width: 100%;
-  color: #fff;
-  border: none;
-  padding: 10px 0;
-  text-transform: uppercase;
-  border-radius: 5px; }
-
-.default {
+.btn-default {
   background-color: #51DDFC; }
-  .default:hover {
+  .btn-default:hover {
     background-color: #7a7a7a; }
-
-.error {
+.btn-error {
   background-color: #E4757A; }
-  .error:hover {
+  .btn-error:hover {
     background-color: #7a7a7a; }
-
-.info {
+.btn-info {
   background-color: #927BC1; }
-  .info:hover {
+  .btn-info:hover {
     background-color: #7a7a7a; }
-
-.success {
+.btn-success {
   background-color: #63CC82; }
-  .success:hover {
+  .btn-success:hover {
     background-color: #7a7a7a; }
-
-.warning {
+.btn-warning {
   background-color: #FD7856; }
-  .warning:hover {
+  .btn-warning:hover {
     background-color: #7a7a7a; }
 
 .form {
@@ -408,7 +395,6 @@ a {
   @media (min-width: 768px) {
     .nav-link {
       flex-basis: 100px; } }
-
 .nav-link:hover {
   color: #fff;
   background-color: #58E1C1; }
@@ -420,7 +406,6 @@ a {
   margin-top: 10px;
   max-width: 100%;
   max-height: 100%; }
-
 .img-frame {
   display: block;
   margin-left: auto;
@@ -429,7 +414,6 @@ a {
   max-width: 100%;
   padding: 13px;
   border: 1px solid #ccc; }
-
 .img-logo {
   display: block;
   margin-left: auto;
@@ -437,11 +421,20 @@ a {
 
 .container {
   padding: 0 10px; }
+  @media (min-width: 768px) {
+    .container {
+      max-width: 1400px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto; } }
 
 .row {
   display: flex;
   flex-direction: column;
   padding: 1em 10px; }
+  @media (min-width: 768px) {
+    .row {
+      flex-direction: row; } }
 
 [class^=col] {
   margin-top: 10px;
@@ -449,40 +442,40 @@ a {
   min-height: 25px;
   padding: 10px;
   border-radius: 5px; }
+  @media (min-width: 768px) {
+    [class^=col] {
+      display: flex;
+      justify-content: center;
+      margin-top: 0;
+      align-items: center; } }
 
 .theme.col-1 {
   background-color: #927BC1; }
-
 .theme.col-2 {
   background-color: #FD7856; }
-
 .theme.col-3 {
   background-color: #DEB2EE; }
-
 .theme.col-4 {
   background-color: #7EE6FD; }
-
 .theme.col-5 {
   background-color: #88D9A0; }
-
 .theme.col-6 {
   background-color: #4DA2BB; }
-
 .theme.col-7 {
   background-color: #EC9FA3; }
-
+  @media (min-width: 768px) {
+    .theme.col-7 {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; } }
 .theme.col-8 {
   background-color: #FD9F85; }
-
 .theme.col-9 {
   background-color: #E4757A; }
-
 .theme.col-10 {
   background-color: #63CC82; }
-
 .theme.col-11 {
   background-color: #51DDFC; }
-
 .theme.col-12 {
   background-color: #80E8D1; }
 
@@ -490,25 +483,12 @@ a {
   flex-basis: 100%; }
 
 @media (min-width: 768px) {
-  .container {
-    max-width: 1400px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto; }
+  .logo {
+    margin-left: initial;
+    margin-right: initial; }
 
-  .centered {
-    display: block;
-    margin-left: auto;
-    margin-right: auto; }
-
-  .row {
-    flex-direction: row; }
-
-  [class^=col] {
-    display: flex;
-    justify-content: center;
-    margin-top: 0;
-    align-items: center; }
+  [class^=btn] + [class^=btn] {
+    margin-left: 10px; }
 
   [class^=col] + [class^=col] {
     margin-left: 10px; }
@@ -547,18 +527,20 @@ a {
     flex-basis: 91.67%; }
 
   .col-12 {
-    flex-basis: 100%; }
+    flex-basis: 100%; } }
+.btn-default, .btn-error, .btn-info, .btn-success, .btn-warning {
+  margin-top: 15px;
+  width: 100%;
+  color: #fff;
+  border: none;
+  padding: 10px 0;
+  text-transform: uppercase;
+  border-radius: 5px; }
+  @media (min-width: 768px) {
+    .btn-default, .btn-error, .btn-info, .btn-success, .btn-warning {
+      padding: 10px 30px; } }
 
-  .btn {
-    padding: 10px 30px; }
-
-  .btn + .btn {
-    margin-left: 10px; }
-
-  .logo {
-    margin-left: initial;
-    margin-right: initial; } }
-.default, .error, .info, .success, .warning {
+.btn-default, .btn-error, .btn-info, .btn-success, .btn-warning {
   transition: background-color .5s ease-in-out; }
 
 /*# sourceMappingURL=styles.css.map */

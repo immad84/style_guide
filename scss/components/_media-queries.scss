@@ -1,28 +1,13 @@
 
 @media (min-width: 768px) {
 
-    .container {
-      max-width: 1400px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
+    .logo {
+      margin-left: initial;
+      margin-right: initial;
     }
-    
-    .centered {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    
-    .row {
-      flex-direction: row;
-    }
-    
-    [class^=col] {
-      display: flex;
-      justify-content: center;
-      margin-top: 0;
-      align-items: center;
+
+    [class^=btn] + [class^=btn] {
+      margin-left: 10px;
     }
     
     [class^=col] + [class^=col] {
@@ -75,19 +60,5 @@
     
     .col-12 {
       flex-basis: 100%;
-    }
-    
-    .btn {
-      padding: 10px 30px;
-    }
-    
-    .btn + .btn {
-      margin-left: 10px;
-    }
-    
-    .logo {
-      margin-left: initial;
-      margin-right: initial;
-    }
-    
+    }  
 }

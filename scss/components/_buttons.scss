@@ -1,51 +1,48 @@
 
-
 .btn {
-  margin-top: 15px;
-  width: 100%;
-  color: $white;
-  border: none;
-  padding: 10px 0;
-  text-transform: uppercase;
-  border-radius: 5px;
-}
-
-  .default {
+  &-default {
     background-color: $malibu;
-    @extend %transit;
+    @extend %btn;
+    @extend %transition;
     &:hover {
       background-color: $color-bg-button;
     }
   }
   
-  .error {
+  &-error {
     background-color: $sunglo ;
-    @extend %transit;
+    @extend %btn;
+    @extend %transition;
     &:hover {
       background-color: $color-bg-button;
     }
   }
   
-  .info {
+  &-info {
     background-color: $purple-mountain-majesty;
-    @extend %transit;
+    @extend %btn;
+    @extend %transition;
     &:hover {
       background-color: $color-bg-button;
     }
   }
   
-  .success {
+  &-success {
     background-color: $emerald;
-    @extend %transit;
+    @extend %btn;
+    @extend %transition;
     &:hover {
       background-color: $color-bg-button;
     }
   }
   
-  .warning {
+  &-warning {
     background-color: $coral;
-    @extend %transit;
+    @extend %btn;
+    @extend %transition;
     &:hover {
       background-color: $color-bg-button;
     }
   }
+}
+  

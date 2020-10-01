@@ -1,5 +1,7 @@
 
-.img-avatar {
+.img {
+
+  &-avatar {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -8,7 +10,7 @@
     max-height: 100%;
   }
   
-  .img-frame {
+  &-frame {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -18,8 +20,10 @@
     border: 1px solid $color-img-frame;
   }
   
-  .img-logo {
+  &-logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
+  
+}
