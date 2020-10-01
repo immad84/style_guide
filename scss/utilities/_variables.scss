@@ -1,5 +1,4 @@
 
-
 // Descriptive color variables
 
 $white                      : #fff;
@@ -23,20 +22,22 @@ $vivid-tangerine            : #FD9F85;
 
 // Functional color variables
 
+$color-primary                  : $viking;
+
 $color-text-primary             : $boulder;
-$color-text-headline-primary    : $viking;
+$color-text-headline-primary    : $color-primary;
 
-$color-bg-button : lighten($boulder, 1%);
+$color-bg-button                : darken(complement($purple-mountain-majesty),10%);
 
-$color-border-bottom  : $viking;
-$color-img-frame      : $silver;
+$color-border-bottom            : $color-primary;
+$color-img-frame                : $silver;
 
-$color-link-default   : $malibu;
-//$color-link-visited : $regent-st-blue;
+$color-link-default             : $malibu;
+$color-link-visited             : $color-primary;
 
-//$color-shadow       : rgba($black,.8);
-$color-body           : $white;
+// Font Stack 
 
+$font-stack-primary   : 'Lato', sans-serif;
 
 // Media Query Breakpoints
 
