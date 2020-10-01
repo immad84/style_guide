@@ -29,11 +29,12 @@ $color-text-headline-primary    : $color-primary;
 
 $color-bg-button                : darken(complement($purple-mountain-majesty),10%);
 
-$color-border-bottom            : $color-primary;
-$color-img-frame                : $silver;
+$color-border-bottom            : complement($silver);
+
+$color-img-frame                : darken($silver,100%);
 
 $color-link-default             : $malibu;
-$color-link-visited             : $color-primary;
+$color-link-visited             : $vivid-tangerine;
 
 // Font Stack 
 

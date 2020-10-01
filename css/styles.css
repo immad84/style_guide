@@ -325,7 +325,7 @@ a {
   color: #51DDFC;
   font-weight: 700; }
   .link:visited {
-    color: #58E1C1; }
+    color: #FD9F85; }
 
 .blockquote {
   font-size: 1.5em;
@@ -366,7 +366,8 @@ a {
   margin: 10px auto 0;
   border: none;
   padding: 10px;
-  border-bottom: 5px solid #58E1C1; }
+  border-bottom: 5px solid #cccccc;
+  outline: none; }
 
 .hidden {
   position: absolute;
@@ -415,11 +416,15 @@ a {
   margin-top: 10px;
   max-width: 100%;
   padding: 13px;
-  border: 1px solid #ccc; }
+  border: 1px solid black; }
 .img-logo {
   display: block;
   margin-left: auto;
   margin-right: auto; }
+  @media (min-width: 768px) {
+    .img-logo {
+      margin-left: initial;
+      margin-right: initial; } }
 
 .container {
   padding: 0 10px; }
@@ -485,10 +490,6 @@ a {
   flex-basis: 100%; }
 
 @media (min-width: 768px) {
-  .logo {
-    margin-left: initial;
-    margin-right: initial; }
-
   [class^=btn] + [class^=btn] {
     margin-left: 10px; }
 

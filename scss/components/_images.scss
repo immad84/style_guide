@@ -1,6 +1,5 @@
 
 .img {
-
   &-avatar {
     display: block;
     margin-left: auto;
@@ -24,6 +23,9 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    @media #{$break-point} {
+      margin-left: initial;
+      margin-right: initial;
+    }
   }
-  
 }
