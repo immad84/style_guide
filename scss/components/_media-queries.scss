@@ -1,5 +1,5 @@
 
-@media (min-width: 768px) {
+@media #{$break-point} {
 
     [class^=btn] + [class^=btn] {
       margin-left: 10px;
