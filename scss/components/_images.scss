@@ -1,28 +1,24 @@
 
 .img {
   &-avatar {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    max-width: 100%; 
-    max-height: 100%;
+    @include img-adjust {
+      margin-top: 10px;
+      max-width: 100%; 
+      max-height: 100%;
+    }
   }
   
   &-frame {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    max-width: 100%;
-    padding: 13px;
-    border: 1px solid $color-img-frame;
+    @include img-adjust {
+      margin-top: 10px;
+      max-width: 100%;
+      padding: 13px;
+      border: 1px solid $color-img-frame;
+    }
   }
   
   &-logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    @include img-adjust;
     @media #{$break-point} {
       margin-left: initial;
       margin-right: initial;
